@@ -1,0 +1,25 @@
+{% extends "AppPFEtrade/padre.html" %}
+{% load static %}
+{% block titulo %}  
+
+<h1> Acá agregamos activos al mercado!</h1>
+<br>
+<h5> Please upload which ticker you wanna add: </h5>
+<br><br>
+
+<form action="/APPFE/marketform/" method="POST"> {% csrf_token %}
+    
+    <p> Position: <input type="text" name = "pos" ></p>
+    <p> Ticker: <input  type="text" name = "tck" ></p>
+    <p> Price: <input   type="number" name = "pri" ></p>
+    
+
+    <input type="submit" value="Add">
+    
+
+</form>
+
+
+
+
+{% endblock %}
