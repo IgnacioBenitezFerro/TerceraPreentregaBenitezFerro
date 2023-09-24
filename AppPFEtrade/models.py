@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 
-#La funcionalidad será de la siguiente manera. Tanto seller como Market propondran ofertas de tikcer o tambien llamadas posiciones, donde los Buyers tomaran la decisión de comprar.
+
 
 class Buyer(models.Model):
     
